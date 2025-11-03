@@ -1,4 +1,4 @@
-# Career Search Assistant - Joe Bishop
+# jmb-1960
 
 A comprehensive job search assistant built on Cloudflare Workers with Mantine UI, designed specifically for Joe Bishop's job search needs.
 
