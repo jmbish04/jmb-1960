@@ -1,0 +1,56 @@
+{
+	"name": "jmb-1960",
+	"main": "src/index.ts",
+	"compatibility_date": "2024-09-23",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS"
+	},
+	"ai": {
+		"binding": "AI"
+	},
+	"browser": {
+		"binding": "BROWSER"
+	},
+	"vars": {
+		"DEFAULT_MODEL": "@cf/openai/gpt-oss-120b"
+	},
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "CHAT_STATE",
+				"class_name": "ChatStateDO"
+			}
+		]
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "jmb-1960",
+			"database_id": "ec8525db-8140-4053-bcd7-f160a1cb6cbf"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "JOBS_KV",
+			"id": "23d9d22edeef4706b55e4ae076d90d5a"
+		}
+	],
+	"r2_buckets": [
+		{
+			"bucket_name": "jmb-1960-resumes",
+			"binding": "RESUMES_R2"
+		}
+	],
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_classes": [
+				"ChatStateDO"
+			]
+		}
+	]
+}
